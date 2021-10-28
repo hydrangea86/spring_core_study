@@ -16,6 +16,6 @@ public class OrderController {
     //주문정보 생성
     public Order createOrder(Long id) {
         Member member = memberRepository.findbyId(id);
-        return new Order(7L, "아이폰13", 1200000);
+        return new Order(id, "아이폰13", 1200000);
     }
 }

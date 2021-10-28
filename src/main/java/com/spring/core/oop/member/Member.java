@@ -2,6 +2,7 @@ package com.spring.core.oop.member;
 
 import lombok.*;
 
+///lombok 사용법 @xxxx
 @Setter
 @AllArgsConstructor  //모든 필드 생성자
 @NoArgsConstructor  //기본생성자
