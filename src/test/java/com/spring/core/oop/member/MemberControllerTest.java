@@ -14,7 +14,6 @@ class MemberControllerTest {
 //      mc.join(member);
         Factory factory = new Factory();
         MemberController mc = factory.memberController();
-
         mc.join(new Member(2L,"김나무", Grade.VIP ));
         mc.findMember(2L);
     }
