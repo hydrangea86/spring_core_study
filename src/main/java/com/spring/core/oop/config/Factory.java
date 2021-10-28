@@ -1,5 +1,6 @@
 package com.spring.core.oop.config;
 
+import com.spring.core.oop.member.DataBaseMemberRepository;
 import com.spring.core.oop.member.MemberController;
 import com.spring.core.oop.member.MemberRepository;
 import com.spring.core.oop.member.MemoryMemberRepository;
@@ -11,7 +12,7 @@ public class Factory {
 
     //회원저장소 객체를 만드는 기능
     public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
+        return new DataBaseMemberRepository();
     }
 
     //회원컨트롤러 객체를 만드는 기능
@@ -20,7 +21,7 @@ public class Factory {
     }
 
     //주문컨트롤러 객체 만드는 기능
-    public OrderController memberController() {
-        return new MemberController(memberRepository());
+    public OrderController orderController() {
+        return new OrderController(memberRepository());
     }
 }

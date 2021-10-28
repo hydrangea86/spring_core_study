@@ -11,7 +11,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public Member findbyId(Long id) {
-        System.out.println("메모리에서" + id + "번 회원 조회함!");
+        System.out.println("메모리에서 " + id + "번 회원 조회함!");
         return null;
     }
 }

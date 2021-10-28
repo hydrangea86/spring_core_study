@@ -11,7 +11,7 @@ public class DataBaseMemberRepository implements MemberRepository{
 
     @Override
     public Member findbyId(Long id) {
-        System.out.println("DB에서" + id +"번 회원 저장함!");
+        System.out.println("DB에서 " + id +"번 회원 저장함!");
         return null;
     }
 }
